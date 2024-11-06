@@ -74,14 +74,14 @@ const Landing = () => {
       </div>
       <div className="absolute top-0 right-0 w-full h-screen z-[20]">
         <div className="relative w-full h-full">
-          <a href="/vote" className="absolute bottom-0 left-0">
+          <a href="https://pump.fun/2eUBVo6ZD26xZukES8jAFjcD6HUE4K3Ku4h68nbdpump" className="absolute bottom-0 left-0">
             <img
               className="object-cover max-w-[1500px] transition-transform duration-300 ease-in-out hover:scale-110"
               src="/images/trump.png"
               alt="Donald Trump Image"
             />
           </a>
-          <a href="/vote" className="absolute bottom-0 right-0">
+          <a href="https://pump.fun/2eUBVo6ZD26xZukES8jAFjcD6HUE4K3Ku4h68nbdpump" className="absolute bottom-0 right-0">
             <img
               className="object-cover max-w-[1500px] transition-transform duration-300 ease-in-out hover:scale-110"
               src="/images/kamala.png"
