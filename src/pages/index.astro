@@ -1,10 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Landing from "../components/Landing.astro";
+import Landing from "../components/Landing.tsx";
 ---
 
 <Layout title="Vote with Pepe!">
   <main>
-    <Landing />
+    <Landing client:only="react" />
   </main>
 </Layout>
