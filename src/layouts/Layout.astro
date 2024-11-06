@@ -21,6 +21,29 @@ const { title } = Astro.props;
     />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyBcY4xhPjl8GUb4mOby9QcDt9pdGrPvOqI",
+        authDomain: "pepe-vote.firebaseapp.com",
+        projectId: "pepe-vote",
+        storageBucket: "pepe-vote.firebasestorage.app",
+        messagingSenderId: "328939384908",
+        appId: "1:328939384908:web:201dc6c70ea8f2827784e9",
+        measurementId: "G-VGKP3LX8NM"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
   </head>
   <body>
     <slot />
