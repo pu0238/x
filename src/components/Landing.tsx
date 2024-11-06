@@ -10,7 +10,7 @@ const Landing = () => {
 
   useEffect(() => {
     const audioContext = new (window.AudioContext ||
-      window.webkitAudioContext)();
+      (window as any).webkitAudioContext)();
 
     const trumpAudio = new Audio("/sounds/eagle.mp3");
     const kamalaAudio = new Audio("/sounds/miau.mp3");
