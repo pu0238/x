@@ -1,0 +1,21 @@
+{
+    "version": 1,
+    "canisters": {
+      "pape_vote": {
+        "frontend": {
+          "entrypoint": "dist/index.html"
+        },
+        "source": [
+          "dist"
+        ],
+        "type": "assets"
+      }
+    },
+    "defaults": {
+      "build": {
+        "packtool": "",
+        "args": ""
+      }
+    },
+    "output_env_file": ".env"
+  }
